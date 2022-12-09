@@ -3,7 +3,7 @@ package sports_test
 import (
 	"testing"
 
-	"github.com/plaub/go-json-example/sports"
+	"github.com/plaub/go-test-project/sports"
 )
 
 func TestCalculatePace(t *testing.T) {

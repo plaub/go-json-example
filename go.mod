@@ -1,4 +1,4 @@
-module github.com/plaub/go-json-example
+module github.com/plaub/go-test-project
 
 go 1.19
 

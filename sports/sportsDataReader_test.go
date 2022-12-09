@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/plaub/go-json-example/sports"
+	"github.com/plaub/go-test-project/sports"
 )
 
 func TestReadSportsData(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/plaub/go-json-example/sports"
+	"github.com/plaub/go-test-project/sports"
 )
 
 func main() {

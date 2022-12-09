@@ -3,7 +3,7 @@ package helper_test
 import (
 	"testing"
 
-	"github.com/plaub/go-json-example/helper"
+	"github.com/plaub/go-test-project/helper"
 )
 
 func TestGetArrayValueSumWithInt64(t *testing.T) {

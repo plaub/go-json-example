@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/plaub/go-json-example/helper"
+	"github.com/plaub/go-test-project/helper"
 )
 
 type SportsData struct {
