@@ -1,1 +1,3 @@
-# go-json-example
+# go test project
+
+playing around with go
