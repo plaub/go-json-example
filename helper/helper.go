@@ -8,3 +8,8 @@ func GetArrayValueSum[V int64 | float64](m []V) V {
 	}
 	return s
 }
+
+// Generic function to get the average of all values in an array.
+func GetArrayValuesAverage[V int64 | float64](m []V) V {
+	return GetArrayValueSum(m) / V(len(m))
+}

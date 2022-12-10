@@ -23,3 +23,21 @@ func TestGetArrayValueSumWithFloat64(t *testing.T) {
 		t.Errorf("Expected %f, got %f", expected, actual)
 	}
 }
+
+func TestGetArrayValuesAverageWithInt64(t *testing.T) {
+	expected := int64(25)
+	actual := helper.GetArrayValuesAverage([]int64{10, 20, 30, 40})
+
+	if expected != actual {
+		t.Errorf("Expected %d, got %d", expected, actual)
+	}
+}
+
+func TestGetArrayValuesAverageWithFloat64(t *testing.T) {
+	expected := float64(25)
+	actual := helper.GetArrayValuesAverage([]float64{10, 20, 30, 40})
+
+	if expected != actual {
+		t.Errorf("Expected %f, got %f", expected, actual)
+	}
+}
