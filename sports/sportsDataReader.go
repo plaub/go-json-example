@@ -32,11 +32,11 @@ func (sd *SportsData) GetEntriesLength() int {
 }
 
 func (sd *SportsData) GetAverageHeartRate() int64 {
-	return helper.GetArrayValueSum(sd.HeartRate) / int64(sd.GetEntriesLength())
+	return helper.GetArrayValuesAverage(sd.HeartRate)
 }
 
 func (sd *SportsData) GetAverageSpeedInMetersPerSeconds() float64 {
-	return helper.GetArrayValueSum(sd.SpeedInMetersPerSecond) / float64(sd.GetEntriesLength())
+	return helper.GetArrayValuesAverage(sd.SpeedInMetersPerSecond)
 }
 
 func (sd *SportsData) GetTotalDurationInSeconds() int64 {
