@@ -17,13 +17,11 @@ func main() {
 	}
 
 	files, filesError := readFilesFromPath(path)
-
 	if filesError != nil {
 		panic(filesError.Error())
 	}
 
 	sportsDataArr, sportsDataError := readSportsDataFromFiles(path, files)
-
 	if sportsDataError != nil {
 		panic(sportsDataError.Error())
 	}
@@ -56,6 +54,7 @@ func readArguments() (path string, shouldExit bool) {
 	return path, false
 }
 
+// Print the data points in each file and the data table.
 func printSportsData(sportsDataArr []sports.SportsData, files []fs.FileInfo) {
 	fmt.Println("Yeah. It worked. :)")
 	fmt.Println()
@@ -70,6 +69,8 @@ func printSportsData(sportsDataArr []sports.SportsData, files []fs.FileInfo) {
 	sports.SportsDataTablePrint(sportsDataArr)
 }
 
+// Read the data from each file and return an array of SportsData.
+// If an error occurs, the function returns nil and the error.
 func readSportsDataFromFiles(path string, files []fs.FileInfo) ([]sports.SportsData, error) {
 	var sportsDataArr = []sports.SportsData{}
 
@@ -85,6 +86,8 @@ func readSportsDataFromFiles(path string, files []fs.FileInfo) ([]sports.SportsD
 	return sportsDataArr, nil
 }
 
+// Read the files from the given path and return an array of FileInfo.
+// If an error occurs, the function returns nil and the error.
 func readFilesFromPath(path string) ([]fs.FileInfo, error) {
 	files, err := ioutil.ReadDir(path)
 
